@@ -22,7 +22,7 @@ export function ShoppingList({
   const groups = shoppingList(plan, recipes, portions);
   const total = groups.reduce((s, g) => s + g.items.length, 0);
   const done = groups.reduce((s, g) => s + g.items.filter((i) => checked[i.key]).length, 0);
-  const dinnerCount = plan.days.filter((d) => !d.restaurant && d.dinner).length;
+  const dinnerCount = plan.days.filter((d) => d.dinner).length;
 
   return (
     <div className="screen">

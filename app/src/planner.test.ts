@@ -2,15 +2,10 @@ import { describe, expect, it } from "vitest";
 import db from "./data/recipes.json";
 import type { Recipe, RecipeDatabase } from "./types";
 import {
-  COMPENSATION_DAYS,
-  DAY_FLOOR,
-  RESTAURANT_ESTIMATE,
   SNACK_RESERVE,
   dailyDinnerAllowance,
-  dayTotals,
   planWeek,
   riktvarde,
-  setRestaurantDays,
   shoppingList,
   swapDinner,
   weekTotals,
@@ -49,7 +44,6 @@ describe("planWeek", () => {
     const plan = planWeek(recipes, demo, { seed: 42 });
     expect(plan.days).toHaveLength(7);
     for (const day of plan.days) {
-      expect(day.restaurant).toBe(false);
       expect(day.dinner).not.toBeNull();
     }
     const totals = weekTotals(plan, recipes, demo);
@@ -108,60 +102,6 @@ describe("planWeek", () => {
   });
 });
 
-describe("restaurangkväll", () => {
-  it("reserverar restauranguppskattningen och ger grannarna lättare middagar", () => {
-    const seed = 42;
-    const before = planWeek(recipes, demo, { seed });
-    const after = setRestaurantDays(before, recipes, demo, [3]);
-
-    expect(after.days[3].restaurant).toBe(true);
-    expect(after.days[3].dinner).toBeNull();
-    const day3 = dayTotals(after, 3, recipes, demo);
-    expect(day3.dinner).toEqual(RESTAURANT_ESTIMATE);
-
-    const byId = new Map(recipes.map((r) => [r.id, r]));
-    const dinnerProtein = (plan: typeof before, i: number) => byId.get(plan.days[i].dinner!)!.adaptedNutrition.protein;
-
-    // Grannarna inom kompensationsfönstret ska i snitt vara lättare än de var före.
-    const neighbours = [3 - COMPENSATION_DAYS, 3 - 1, 3 + 1, 3 + COMPENSATION_DAYS];
-    const avg = (plan: typeof before) => neighbours.reduce((s, i) => s + dinnerProtein(plan, i), 0) / neighbours.length;
-    expect(avg(after)).toBeLessThanOrEqual(avg(before));
-
-    // En granne blir aldrig tyngre än den var (samma mått som planeraren: protein väger tyngst, salt hälften).
-    const lightness = (r: Recipe) => r.adaptedNutrition.protein / demo.proteinTarget + 0.5 * (r.adaptedNutrition.salt / demo.saltTarget);
-    for (const i of neighbours) {
-      const b = byId.get(before.days[i].dinner!)!;
-      const a = byId.get(after.days[i].dinner!)!;
-      expect(lightness(a)).toBeLessThanOrEqual(lightness(b) + 1e-9);
-    }
-
-    // Byts en grannes middag ut, håller den nya dagen golvet.
-    for (const i of neighbours) {
-      if (after.days[i].dinner === before.days[i].dinner) continue;
-      const t = dayTotals(after, i, recipes, demo);
-      expect(t.protein).toBeGreaterThanOrEqual(DAY_FLOOR * demo.proteinTarget - 1e-6);
-    }
-
-    // Dagar utanför fönstret behålls.
-    expect(after.days[0].dinner).toBe(before.days[0].dinner);
-    expect(after.days[6].dinner).toBe(before.days[6].dinner);
-
-    // Veckan håller fortfarande budgeten.
-    const totals = weekTotals(after, recipes, demo);
-    expect(totals.protein).toBeLessThanOrEqual(totals.budget.protein);
-    expect(totals.salt).toBeLessThanOrEqual(totals.budget.salt);
-  });
-
-  it("räknar med restauranguppskattningen i veckototalen", () => {
-    const plain = planWeek(recipes, demo, { seed: 8 });
-    const withOut = planWeek(recipes, demo, { seed: 8, restaurantDays: [1, 4] });
-    const t = weekTotals(withOut, recipes, demo);
-    const restaurantProtein = t.perDay.filter((_, i) => [1, 4].includes(i)).reduce((s, d) => s + d.dinner.protein, 0);
-    expect(restaurantProtein).toBe(2 * RESTAURANT_ESTIMATE.protein);
-    expect(plain.days.filter((d) => d.restaurant)).toHaveLength(0);
-  });
-});
-
 describe("swapDinner", () => {
   it("byter till ett annat recept som inte redan finns i veckan", () => {
     const plan = planWeek(recipes, demo, { seed: 42 });
@@ -183,7 +123,7 @@ describe("shoppingList", () => {
     expect(torsk).toBeDefined();
     const plan = {
       seed: 1,
-      days: [{ dayIndex: 0, dinner: torsk.id, restaurant: false, breakfastId: "grot", lunchId: "rester" }],
+      days: [{ dayIndex: 0, dinner: torsk.id, breakfastId: "grot", lunchId: "rester" }],
     };
     const list = shoppingList(plan, recipes, 2);
     const all = list.flatMap((g) => g.items);
@@ -206,10 +146,5 @@ describe("shoppingList", () => {
     expect(fisk.label).toBe("Fisk & skaldjur");
     expect(fisk.items.find((i) => i.name === "torskrygg")!.amount).toBe(`ca ${expectedTorsk} g`);
     expect(all.some((i) => /^(fling)?salt$/.test(i.name.toLowerCase()))).toBe(false);
-  });
-
-  it("hoppar över restaurangdagar", () => {
-    const plan = planWeek(recipes, demo, { seed: 2, restaurantDays: [0, 1, 2, 3, 4, 5, 6] });
-    expect(shoppingList(plan, recipes, 1)).toEqual([]);
   });
 });

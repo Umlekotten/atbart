@@ -156,16 +156,6 @@ export function RecipeImage({
 // Ikoner (inline SVG, ärver currentColor)
 // ---------------------------------------------------------------------------
 
-export function ForkKnife({ size = 18 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M7 2v8a2.5 2.5 0 0 0 2.5 2.5V22" />
-      <path d="M4.5 2v6M9.5 2v6" />
-      <path d="M17 2c-2 2-2.5 5-2.5 8.5 0 1.5 1 2 2 2V22" />
-    </svg>
-  );
-}
-
 export function ChevronLeft({ size = 20 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

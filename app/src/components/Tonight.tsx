@@ -1,12 +1,7 @@
 import type { Recipe } from "../types";
-import {
-  RESTAURANT_ESTIMATE,
-  weekTotals,
-  type Profile,
-  type WeekPlan,
-} from "../planner";
-import { WEEKDAYS, caProtein, caSalt, longDate, nutritionLine, sv, todayIndex, EFFORT_LABEL, PROTEIN_SOURCE_LABEL } from "../format";
-import { Bar, Button, Chip, FitBadge, ForkKnife, RecipeImage, ofBudget } from "./ui";
+import { weekTotals, type Profile, type WeekPlan } from "../planner";
+import { WEEKDAYS, longDate, nutritionLine, sv, todayIndex, EFFORT_LABEL, PROTEIN_SOURCE_LABEL } from "../format";
+import { Bar, Button, Chip, FitBadge, RecipeImage, ofBudget } from "./ui";
 
 export function Tonight({
   plan,
@@ -17,7 +12,6 @@ export function Tonight({
   onFilter,
   onSwap,
   onOpenRecipe,
-  onOpenRestaurant,
 }: {
   plan: WeekPlan;
   profile: Profile;
@@ -27,7 +21,6 @@ export function Tonight({
   onFilter: (f: "alla" | "enkla") => void;
   onSwap: () => void;
   onOpenRecipe: (id: string, showAdaptations?: boolean) => void;
-  onOpenRestaurant: () => void;
 }) {
   const today = todayIndex();
   const day = plan.days[today];
@@ -44,23 +37,7 @@ export function Tonight({
         <p className="muted">{longDate()}</p>
       </header>
 
-      {day.restaurant ? (
-        <section className="card dinner-card dinner-out">
-          <div className="dinner-out-icon">
-            <ForkKnife size={28} />
-          </div>
-          <h2>I kväll äter du ute</h2>
-          <p>
-            Njut av kvällen och ät det du blir bjuden på. Vi har räknat med {caProtein(RESTAURANT_ESTIMATE.protein)} och{" "}
-            {caSalt(RESTAURANT_ESTIMATE.salt)}, och dagarna runt om har fått lite lättare middagar. Veckan landar ändå.
-          </p>
-          <div className="btn-row">
-            <Button variant="secondary" full onClick={onOpenRestaurant}>
-              Ändra
-            </Button>
-          </div>
-        </section>
-      ) : recipe ? (
+      {recipe ? (
         <section className="card dinner-card">
           <RecipeImage recipe={recipe} size="card" />
           <div className="dinner-body">

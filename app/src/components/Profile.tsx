@@ -89,7 +89,7 @@ export function ProfileView({
       <footer className="disclaimer">
         <p>Appen är gjord för njursvikt utan dialys. Siffrorna är ungefärliga och ersätter inte råd från din dietist eller läkare.</p>
         <p className="muted small">
-          Tröskelvärden, riktvärden och regeln för hur veckan jämnas ut är antaganden som ska granskas av dietist.
+          Tröskelvärden och riktvärden är antaganden som ska granskas av dietist.
           Recept från köket.se används bara för intern demo.
         </p>
       </footer>
