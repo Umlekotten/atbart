@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.cache/
+scraper/.cache/
+.vercel/
+*.log
+.DS_Store
+Thumbs.db
+
+# Pitchen (17 MB) hålls utanför kodrepot. Ta bort raden om ni vill ha med den.
+*.pptx

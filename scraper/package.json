@@ -1,0 +1,18 @@
+{
+  "name": "whatcanifkineat-scraper",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hämtar middagsrecept från köket.se, räknar protein/salt via Livsmedelsverket och klassar dem för njurvänlig kost.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "test": "node ingredients.mjs",
+    "discover": "node discover.mjs",
+    "scrape": "node scrape.mjs",
+    "foods": "node foods.mjs",
+    "build": "node build.mjs",
+    "pipeline": "node pipeline.mjs"
+  }
+}

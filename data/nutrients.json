@@ -1,0 +1,2171 @@
+{
+  "25": {
+    "namn": "Remouladsås",
+    "protein": 1.5,
+    "salt": 0.9,
+    "sodium": 344,
+    "potassium": 37,
+    "phosphorus": 27,
+    "kcal": 707
+  },
+  "29": {
+    "namn": "Smör fett 80%",
+    "protein": 0.6,
+    "salt": 1.2,
+    "sodium": 480,
+    "potassium": 21,
+    "phosphorus": 22,
+    "kcal": 766
+  },
+  "35": {
+    "namn": "Olivolja",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 0,
+    "phosphorus": 0,
+    "kcal": 884
+  },
+  "38": {
+    "namn": "Sesamolja",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 0,
+    "phosphorus": 0,
+    "kcal": 884
+  },
+  "50": {
+    "namn": "Majonnäs fett 80%",
+    "protein": 1.3,
+    "salt": 1.1,
+    "sodium": 437,
+    "potassium": 37,
+    "phosphorus": 29,
+    "kcal": 666
+  },
+  "58": {
+    "namn": "Bearnaisesås hemlagad",
+    "protein": 2.7,
+    "salt": 0.6,
+    "sodium": 263,
+    "potassium": 32,
+    "phosphorus": 51,
+    "kcal": 511
+  },
+  "59": {
+    "namn": "Hollandaisesås hemlagad",
+    "protein": 3,
+    "salt": 1.2,
+    "sodium": 505,
+    "potassium": 35,
+    "phosphorus": 63,
+    "kcal": 516
+  },
+  "70": {
+    "namn": "Färskost cottage cheese naturell fett 4%",
+    "protein": 13.4,
+    "salt": 0.7,
+    "sodium": 270,
+    "potassium": 54,
+    "phosphorus": 134,
+    "kcal": 100
+  },
+  "76": {
+    "namn": "Kvarg färskost fett 10%",
+    "protein": 12.7,
+    "salt": 0.1,
+    "sodium": 38,
+    "potassium": 151,
+    "phosphorus": 180,
+    "kcal": 152
+  },
+  "82": {
+    "namn": "Ädelost blågrön mögelost fett 30%",
+    "protein": 21.2,
+    "salt": 1.6,
+    "sodium": 630,
+    "potassium": 82,
+    "phosphorus": 360,
+    "kcal": 336
+  },
+  "92": {
+    "namn": "Vitmögelost brie fett ca 38%",
+    "protein": 15.6,
+    "salt": 1,
+    "sodium": 420,
+    "potassium": 72,
+    "phosphorus": 300,
+    "kcal": 374
+  },
+  "94": {
+    "namn": "Salladsost fett 22%",
+    "protein": 16.7,
+    "salt": 2,
+    "sodium": 815,
+    "potassium": 55,
+    "phosphorus": 222,
+    "kcal": 272
+  },
+  "96": {
+    "namn": "Ost hårdost fett 28%",
+    "protein": 26.2,
+    "salt": 1.1,
+    "sodium": 424,
+    "potassium": 77,
+    "phosphorus": 440,
+    "kcal": 358
+  },
+  "100": {
+    "namn": "Ost halloumi rå fett 22%",
+    "protein": 22.3,
+    "salt": 4.2,
+    "sodium": 1680,
+    "potassium": 74,
+    "phosphorus": 406,
+    "kcal": 292
+  },
+  "103": {
+    "namn": "Ost hårdost parmesan fett 30% typ Parmiggiano Reggiano",
+    "protein": 31.1,
+    "salt": 1.3,
+    "sodium": 510,
+    "potassium": 87,
+    "phosphorus": 590,
+    "kcal": 428
+  },
+  "124": {
+    "namn": "Yoghurt naturell fett 3% berikad",
+    "protein": 3.4,
+    "salt": 0.1,
+    "sodium": 38,
+    "potassium": 162,
+    "phosphorus": 91,
+    "kcal": 56
+  },
+  "150": {
+    "namn": "Mellanmjölk fett 1,5% berikad",
+    "protein": 3.6,
+    "salt": 0.1,
+    "sodium": 35,
+    "potassium": 161,
+    "phosphorus": 140,
+    "kcal": 47
+  },
+  "188": {
+    "namn": "Ströbröd malt hårt bröd fullkorn vete råg socker fibrer ca 5%",
+    "protein": 10.3,
+    "salt": 1.1,
+    "sodium": 440,
+    "potassium": 280,
+    "phosphorus": 180,
+    "kcal": 402
+  },
+  "193": {
+    "namn": "Bröd vitt vete vatten fibrer ca 3,5% typ pitabröd",
+    "protein": 8.6,
+    "salt": 1.2,
+    "sodium": 461,
+    "potassium": 141,
+    "phosphorus": 112,
+    "kcal": 274
+  },
+  "200": {
+    "namn": "Bröd vitt vete fibrer ca 2,5% typ baguette",
+    "protein": 8.5,
+    "salt": 1,
+    "sodium": 415,
+    "potassium": 200,
+    "phosphorus": 141,
+    "kcal": 270
+  },
+  "230": {
+    "namn": "Potatis höst rå",
+    "protein": 1.8,
+    "salt": 0,
+    "sodium": 3,
+    "potassium": 384,
+    "phosphorus": 44,
+    "kcal": 81
+  },
+  "238": {
+    "namn": "Klyftpotatis u. skal ugnsstekt m. rapsolja",
+    "protein": 2.2,
+    "salt": 0.3,
+    "sodium": 132,
+    "potassium": 594,
+    "phosphorus": 94,
+    "kcal": 120
+  },
+  "278": {
+    "namn": "Potatismos m. lättmjölk",
+    "protein": 2.3,
+    "salt": 0.8,
+    "sodium": 320,
+    "potassium": 268,
+    "phosphorus": 69,
+    "kcal": 86
+  },
+  "286": {
+    "namn": "Grönsaksblandning m. morot palsternacka purjolök rotselleri frysvara",
+    "protein": 1.2,
+    "salt": 0.1,
+    "sodium": 38,
+    "potassium": 250,
+    "phosphorus": 40,
+    "kcal": 36
+  },
+  "287": {
+    "namn": "Jordärtskocka",
+    "protein": 1.9,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 610,
+    "phosphorus": 66,
+    "kcal": 67
+  },
+  "288": {
+    "namn": "Kålrot",
+    "protein": 1.4,
+    "salt": 0,
+    "sodium": 8,
+    "potassium": 166,
+    "phosphorus": 30,
+    "kcal": 37
+  },
+  "289": {
+    "namn": "Morot",
+    "protein": 0.7,
+    "salt": 0.1,
+    "sodium": 31,
+    "potassium": 210,
+    "phosphorus": 23,
+    "kcal": 36
+  },
+  "290": {
+    "namn": "Palsternacka",
+    "protein": 1.7,
+    "salt": 0,
+    "sodium": 3,
+    "potassium": 400,
+    "phosphorus": 56,
+    "kcal": 71
+  },
+  "291": {
+    "namn": "Pepparrot",
+    "protein": 3.1,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 510,
+    "phosphorus": 58,
+    "kcal": 70
+  },
+  "292": {
+    "namn": "Rotselleri",
+    "protein": 1,
+    "salt": 0.1,
+    "sodium": 45,
+    "potassium": 296,
+    "phosphorus": 60,
+    "kcal": 32
+  },
+  "293": {
+    "namn": "Rädisa",
+    "protein": 0.7,
+    "salt": 0,
+    "sodium": 21,
+    "potassium": 209,
+    "phosphorus": 15,
+    "kcal": 11
+  },
+  "294": {
+    "namn": "Rödbeta",
+    "protein": 1.2,
+    "salt": 0,
+    "sodium": 20,
+    "potassium": 280,
+    "phosphorus": 28,
+    "kcal": 51
+  },
+  "320": {
+    "namn": "Avokado",
+    "protein": 1.9,
+    "salt": 0,
+    "sodium": 5,
+    "potassium": 600,
+    "phosphorus": 67,
+    "kcal": 197
+  },
+  "321": {
+    "namn": "Stjälkselleri",
+    "protein": 1,
+    "salt": 0,
+    "sodium": 11,
+    "potassium": 298,
+    "phosphorus": 45,
+    "kcal": 19
+  },
+  "322": {
+    "namn": "Blomkål",
+    "protein": 1.7,
+    "salt": 0.1,
+    "sodium": 23,
+    "potassium": 325,
+    "phosphorus": 45,
+    "kcal": 25
+  },
+  "324": {
+    "namn": "Bondbönor färska kokta u. salt",
+    "protein": 9,
+    "salt": 0,
+    "sodium": 2,
+    "potassium": 413,
+    "phosphorus": 162,
+    "kcal": 102
+  },
+  "325": {
+    "namn": "Broccoli",
+    "protein": 2.9,
+    "salt": 0,
+    "sodium": 18,
+    "potassium": 420,
+    "phosphorus": 69,
+    "kcal": 36
+  },
+  "327": {
+    "namn": "Brysselkål",
+    "protein": 3.4,
+    "salt": 0,
+    "sodium": 7,
+    "potassium": 390,
+    "phosphorus": 69,
+    "kcal": 44
+  },
+  "330": {
+    "namn": "Sojabönsgroddar",
+    "protein": 13.1,
+    "salt": 0,
+    "sodium": 14,
+    "potassium": 484,
+    "phosphorus": 164,
+    "kcal": 146
+  },
+  "331": {
+    "namn": "Gröna bönor",
+    "protein": 2.1,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 286,
+    "phosphorus": 38,
+    "kcal": 27
+  },
+  "333": {
+    "namn": "Champinjon",
+    "protein": 2.4,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 110,
+    "phosphorus": 15,
+    "kcal": 27
+  },
+  "336": {
+    "namn": "Fänkål",
+    "protein": 2.8,
+    "salt": 0,
+    "sodium": 7,
+    "potassium": 396,
+    "phosphorus": 51,
+    "kcal": 28
+  },
+  "337": {
+    "namn": "Grönkål",
+    "protein": 3.4,
+    "salt": 0,
+    "sodium": 22,
+    "potassium": 378,
+    "phosphorus": 69,
+    "kcal": 40
+  },
+  "339": {
+    "namn": "Gurka",
+    "protein": 0.8,
+    "salt": 0,
+    "sodium": 3,
+    "potassium": 160,
+    "phosphorus": 25,
+    "kcal": 13
+  },
+  "342": {
+    "namn": "Kronärtskocka",
+    "protein": 2.7,
+    "salt": 0.2,
+    "sodium": 80,
+    "potassium": 340,
+    "phosphorus": 77,
+    "kcal": 52
+  },
+  "344": {
+    "namn": "Lök gul",
+    "protein": 1.2,
+    "salt": 0,
+    "sodium": 3,
+    "potassium": 190,
+    "phosphorus": 33,
+    "kcal": 39
+  },
+  "345": {
+    "namn": "Majskolv",
+    "protein": 3.9,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 294,
+    "phosphorus": 105,
+    "kcal": 125
+  },
+  "347": {
+    "namn": "Majskorn frysvara",
+    "protein": 3.2,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 220,
+    "phosphorus": 65,
+    "kcal": 81
+  },
+  "351": {
+    "namn": "Paprika röd",
+    "protein": 0.5,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 116,
+    "phosphorus": 15,
+    "kcal": 22
+  },
+  "352": {
+    "namn": "Persilja blad",
+    "protein": 5.6,
+    "salt": 0.1,
+    "sodium": 53,
+    "potassium": 466,
+    "phosphorus": 79,
+    "kcal": 78
+  },
+  "353": {
+    "namn": "Pumpa",
+    "protein": 1,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 340,
+    "phosphorus": 44,
+    "kcal": 26
+  },
+  "354": {
+    "namn": "Purjolök",
+    "protein": 1.6,
+    "salt": 0,
+    "sodium": 6,
+    "potassium": 240,
+    "phosphorus": 29,
+    "kcal": 30
+  },
+  "355": {
+    "namn": "Rödkål",
+    "protein": 1.1,
+    "salt": 0,
+    "sodium": 8,
+    "potassium": 260,
+    "phosphorus": 25,
+    "kcal": 31
+  },
+  "358": {
+    "namn": "Salladskål",
+    "protein": 1.3,
+    "salt": 0,
+    "sodium": 9,
+    "potassium": 204,
+    "phosphorus": 38,
+    "kcal": 21
+  },
+  "359": {
+    "namn": "Sockerärtor",
+    "protein": 3.4,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 230,
+    "phosphorus": 67,
+    "kcal": 37
+  },
+  "361": {
+    "namn": "Spenat frysvara",
+    "protein": 2.2,
+    "salt": 0,
+    "sodium": 18,
+    "potassium": 230,
+    "phosphorus": 33,
+    "kcal": 20
+  },
+  "362": {
+    "namn": "Squash",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 148,
+    "phosphorus": 28,
+    "kcal": 14
+  },
+  "364": {
+    "namn": "Tomat",
+    "protein": 0.8,
+    "salt": 0,
+    "sodium": 2,
+    "potassium": 240,
+    "phosphorus": 22,
+    "kcal": 18
+  },
+  "365": {
+    "namn": "Tomat torkad m. olja",
+    "protein": 5,
+    "salt": 3.1,
+    "sodium": 1238,
+    "potassium": 882,
+    "phosphorus": 103,
+    "kcal": 190
+  },
+  "370": {
+    "namn": "Vitkål",
+    "protein": 1.2,
+    "salt": 0,
+    "sodium": 6,
+    "potassium": 250,
+    "phosphorus": 28,
+    "kcal": 32
+  },
+  "371": {
+    "namn": "Vitlök",
+    "protein": 6.8,
+    "salt": 0,
+    "sodium": 10,
+    "potassium": 442,
+    "phosphorus": 118,
+    "kcal": 128
+  },
+  "372": {
+    "namn": "Aubergine",
+    "protein": 1.1,
+    "salt": 0,
+    "sodium": 2,
+    "potassium": 210,
+    "phosphorus": 24,
+    "kcal": 19
+  },
+  "374": {
+    "namn": "Gröna ärtor frysvara",
+    "protein": 5.2,
+    "salt": 0.1,
+    "sodium": 56,
+    "potassium": 150,
+    "phosphorus": 88,
+    "kcal": 69
+  },
+  "377": {
+    "namn": "Dill färsk",
+    "protein": 3.7,
+    "salt": 0.1,
+    "sodium": 26,
+    "potassium": 750,
+    "phosphorus": 85,
+    "kcal": 58
+  },
+  "379": {
+    "namn": "Basilika färsk",
+    "protein": 2.5,
+    "salt": 0,
+    "sodium": 4,
+    "potassium": 462,
+    "phosphorus": 69,
+    "kcal": 25
+  },
+  "380": {
+    "namn": "Chilipeppar färsk",
+    "protein": 2.4,
+    "salt": 0,
+    "sodium": 2,
+    "potassium": 341,
+    "phosphorus": 51,
+    "kcal": 49
+  },
+  "389": {
+    "namn": "Grönsaksblandning m. ärtor majs paprika frysvara",
+    "protein": 4.2,
+    "salt": 0,
+    "sodium": 20,
+    "potassium": 220,
+    "phosphorus": 15,
+    "kcal": 66
+  },
+  "400": {
+    "namn": "Majskorn konserv. u. lag",
+    "protein": 2.1,
+    "salt": 0.4,
+    "sodium": 170,
+    "potassium": 151,
+    "phosphorus": 46,
+    "kcal": 80
+  },
+  "402": {
+    "namn": "Oliver svarta m. olja avrunna",
+    "protein": 0.8,
+    "salt": 2,
+    "sodium": 815,
+    "potassium": 24,
+    "phosphorus": 5,
+    "kcal": 142
+  },
+  "408": {
+    "namn": "Tomatjuice konserv. drickf.",
+    "protein": 0.8,
+    "salt": 0.9,
+    "sodium": 360,
+    "potassium": 220,
+    "phosphorus": 19,
+    "kcal": 18
+  },
+  "410": {
+    "namn": "Tomatpuré konc. konserv.",
+    "protein": 4.4,
+    "salt": 0.1,
+    "sodium": 49,
+    "potassium": 1257,
+    "phosphorus": 94,
+    "kcal": 84
+  },
+  "422": {
+    "namn": "Tomat krossad konserv. m. lag",
+    "protein": 0.8,
+    "salt": 0,
+    "sodium": 16,
+    "potassium": 295,
+    "phosphorus": 22,
+    "kcal": 22
+  },
+  "461": {
+    "namn": "Tomatsås italiensk",
+    "protein": 1.1,
+    "salt": 1.4,
+    "sodium": 581,
+    "potassium": 178,
+    "phosphorus": 29,
+    "kcal": 93
+  },
+  "462": {
+    "namn": "Tomatsalsa kall",
+    "protein": 1.2,
+    "salt": 1.3,
+    "sodium": 516,
+    "potassium": 250,
+    "phosphorus": 29,
+    "kcal": 25
+  },
+  "488": {
+    "namn": "Bostongurka",
+    "protein": 1,
+    "salt": 1.5,
+    "sodium": 600,
+    "potassium": 170,
+    "phosphorus": 4,
+    "kcal": 78
+  },
+  "491": {
+    "namn": "Ättiksgurka u. lag",
+    "protein": 0.9,
+    "salt": 2.3,
+    "sodium": 910,
+    "potassium": 140,
+    "phosphorus": 23,
+    "kcal": 43
+  },
+  "520": {
+    "namn": "Granatäpple",
+    "protein": 1.1,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 225,
+    "phosphorus": 40,
+    "kcal": 67
+  },
+  "550": {
+    "namn": "Ananas",
+    "protein": 0.6,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 123,
+    "phosphorus": 6,
+    "kcal": 47
+  },
+  "551": {
+    "namn": "Apelsin",
+    "protein": 0.8,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 122,
+    "phosphorus": 16,
+    "kcal": 50
+  },
+  "553": {
+    "namn": "Banan",
+    "protein": 1.1,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 330,
+    "phosphorus": 23,
+    "kcal": 95
+  },
+  "559": {
+    "namn": "Citron",
+    "protein": 0.9,
+    "salt": 0,
+    "sodium": 4,
+    "potassium": 130,
+    "phosphorus": 15,
+    "kcal": 50
+  },
+  "561": {
+    "namn": "Fikon",
+    "protein": 2,
+    "salt": 0,
+    "sodium": 2,
+    "potassium": 231,
+    "phosphorus": 22,
+    "kcal": 87
+  },
+  "572": {
+    "namn": "Lime",
+    "protein": 0.7,
+    "salt": 0,
+    "sodium": 2,
+    "potassium": 102,
+    "phosphorus": 18,
+    "kcal": 47
+  },
+  "574": {
+    "namn": "Mango",
+    "protein": 0.7,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 149,
+    "phosphorus": 11,
+    "kcal": 52
+  },
+  "583": {
+    "namn": "Päron",
+    "protein": 0.3,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 105,
+    "phosphorus": 9,
+    "kcal": 54
+  },
+  "588": {
+    "namn": "Äpple m. skal",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 62,
+    "phosphorus": 7,
+    "kcal": 48
+  },
+  "599": {
+    "namn": "Aprikos torkad",
+    "protein": 2.2,
+    "salt": 0,
+    "sodium": 9,
+    "potassium": 1039,
+    "phosphorus": 67,
+    "kcal": 190
+  },
+  "602": {
+    "namn": "Citronskal",
+    "protein": 1.5,
+    "salt": 0,
+    "sodium": 6,
+    "potassium": 160,
+    "phosphorus": 12,
+    "kcal": 64
+  },
+  "603": {
+    "namn": "Dadlar torkade",
+    "protein": 2.4,
+    "salt": 0,
+    "sodium": 11,
+    "potassium": 727,
+    "phosphorus": 68,
+    "kcal": 321
+  },
+  "610": {
+    "namn": "Russin",
+    "protein": 1.9,
+    "salt": 0,
+    "sodium": 15,
+    "potassium": 598,
+    "phosphorus": 79,
+    "kcal": 285
+  },
+  "614": {
+    "namn": "Ananas konserv. m. juice",
+    "protein": 0.4,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 122,
+    "phosphorus": 6,
+    "kcal": 62
+  },
+  "641": {
+    "namn": "Apelsinjuice färskpressad",
+    "protein": 0.7,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 200,
+    "phosphorus": 17,
+    "kcal": 48
+  },
+  "645": {
+    "namn": "Citronjuice färskpressad",
+    "protein": 0.6,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 104,
+    "phosphorus": 12,
+    "kcal": 29
+  },
+  "652": {
+    "namn": "Limejuice färskpressad",
+    "protein": 0.4,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 160,
+    "phosphorus": 16,
+    "kcal": 40
+  },
+  "700": {
+    "namn": "Havredryck fett 1,5% berikad",
+    "protein": 1,
+    "salt": 0.1,
+    "sodium": 44,
+    "potassium": 102,
+    "phosphorus": 65,
+    "kcal": 48
+  },
+  "702": {
+    "namn": "Havregryn fullkorn",
+    "protein": 9.5,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 340,
+    "phosphorus": 360,
+    "kcal": 375
+  },
+  "814": {
+    "namn": "Ris kinesiskt asiatiskt kokt u. salt tillagad på restaurang",
+    "protein": 2.7,
+    "salt": 0,
+    "sodium": 10,
+    "potassium": 20,
+    "phosphorus": 28,
+    "kcal": 144
+  },
+  "829": {
+    "namn": "Bulgur",
+    "protein": 12.3,
+    "salt": 0,
+    "sodium": 17,
+    "potassium": 410,
+    "phosphorus": 300,
+    "kcal": 353
+  },
+  "831": {
+    "namn": "Couscous",
+    "protein": 12.8,
+    "salt": 0,
+    "sodium": 10,
+    "potassium": 166,
+    "phosphorus": 170,
+    "kcal": 361
+  },
+  "845": {
+    "namn": "Pasta okokt",
+    "protein": 11.9,
+    "salt": 0,
+    "sodium": 2,
+    "potassium": 197,
+    "phosphorus": 162,
+    "kcal": 358
+  },
+  "870": {
+    "namn": "Nudlar äggnudlar okokta",
+    "protein": 14,
+    "salt": 0,
+    "sodium": 21,
+    "potassium": 234,
+    "phosphorus": 214,
+    "kcal": 377
+  },
+  "877": {
+    "namn": "Kidney bönor torkade",
+    "protein": 19.9,
+    "salt": 0,
+    "sodium": 10,
+    "potassium": 1324,
+    "phosphorus": 409,
+    "kcal": 326
+  },
+  "879": {
+    "namn": "Vita bönor torkade",
+    "protein": 22,
+    "salt": 0,
+    "sodium": 6,
+    "potassium": 1530,
+    "phosphorus": 425,
+    "kcal": 319
+  },
+  "881": {
+    "namn": "Kikärtor torkade",
+    "protein": 18.8,
+    "salt": 0.1,
+    "sodium": 27,
+    "potassium": 935,
+    "phosphorus": 267,
+    "kcal": 331
+  },
+  "884": {
+    "namn": "Linser torkade",
+    "protein": 24.4,
+    "salt": 0,
+    "sodium": 10,
+    "potassium": 786,
+    "phosphorus": 310,
+    "kcal": 339
+  },
+  "905": {
+    "namn": "Tofu fast",
+    "protein": 6.6,
+    "salt": 0.2,
+    "sodium": 59,
+    "potassium": 140,
+    "phosphorus": 110,
+    "kcal": 70
+  },
+  "908": {
+    "namn": "Miso sojabönspasta fermenterad",
+    "protein": 9.7,
+    "salt": 10.8,
+    "sodium": 4300,
+    "potassium": 930,
+    "phosphorus": 250,
+    "kcal": 208
+  },
+  "909": {
+    "namn": "Sojasås",
+    "protein": 7.5,
+    "salt": 14.8,
+    "sodium": 5900,
+    "potassium": 400,
+    "phosphorus": 140,
+    "kcal": 57
+  },
+  "916": {
+    "namn": "Korv veg. soja- och veteprotein tillagad typ grillkorv",
+    "protein": 16.3,
+    "salt": 1.7,
+    "sodium": 703,
+    "potassium": 149,
+    "phosphorus": 128,
+    "kcal": 128
+  },
+  "921": {
+    "namn": "Lamm kotlett rå",
+    "protein": 19,
+    "salt": 0.2,
+    "sodium": 72,
+    "potassium": 260,
+    "phosphorus": 170,
+    "kcal": 230
+  },
+  "924": {
+    "namn": "Lamm stek rå",
+    "protein": 20.9,
+    "salt": 0.2,
+    "sodium": 68,
+    "potassium": 350,
+    "phosphorus": 220,
+    "kcal": 108
+  },
+  "925": {
+    "namn": "Lamm färs rå fett 20%",
+    "protein": 17.4,
+    "salt": 0.2,
+    "sodium": 82,
+    "potassium": 250,
+    "phosphorus": 150,
+    "kcal": 245
+  },
+  "946": {
+    "namn": "Nöt ryggbiff rå",
+    "protein": 21.8,
+    "salt": 0.2,
+    "sodium": 58,
+    "potassium": 333,
+    "phosphorus": 189,
+    "kcal": 123
+  },
+  "951": {
+    "namn": "Nöt färs rå fett 10%",
+    "protein": 20.1,
+    "salt": 0.2,
+    "sodium": 86,
+    "potassium": 278,
+    "phosphorus": 162,
+    "kcal": 182
+  },
+  "953": {
+    "namn": "Nöt högrev rå fett bortskuret",
+    "protein": 20.6,
+    "salt": 0.2,
+    "sodium": 68,
+    "potassium": 295,
+    "phosphorus": 165,
+    "kcal": 145
+  },
+  "970": {
+    "namn": "Gris fläskfilé rå",
+    "protein": 20.6,
+    "salt": 0.1,
+    "sodium": 49,
+    "potassium": 373,
+    "phosphorus": 204,
+    "kcal": 107
+  },
+  "971": {
+    "namn": "Gris fläskkotlett rå fettkant 5 mm",
+    "protein": 19.4,
+    "salt": 0.2,
+    "sodium": 62,
+    "potassium": 325,
+    "phosphorus": 188,
+    "kcal": 185
+  },
+  "978": {
+    "namn": "Gris fläskkarré rå",
+    "protein": 17.8,
+    "salt": 0.1,
+    "sodium": 57,
+    "potassium": 325,
+    "phosphorus": 182,
+    "kcal": 171
+  },
+  "995": {
+    "namn": "Älg skav rå frysvara",
+    "protein": 19.8,
+    "salt": 0.2,
+    "sodium": 76,
+    "potassium": 325,
+    "phosphorus": 197,
+    "kcal": 123
+  },
+  "1003": {
+    "namn": "Gris bacon rå",
+    "protein": 13.4,
+    "salt": 2,
+    "sodium": 820,
+    "potassium": 190,
+    "phosphorus": 142,
+    "kcal": 344
+  },
+  "1006": {
+    "namn": "Gris kassler kotlettrad rökt",
+    "protein": 20.7,
+    "salt": 4.3,
+    "sodium": 1725,
+    "potassium": 313,
+    "phosphorus": 220,
+    "kcal": 106
+  },
+  "1008": {
+    "namn": "Gris skinka lufttorkad italiensk",
+    "protein": 31.9,
+    "salt": 4.6,
+    "sodium": 1839,
+    "potassium": 533,
+    "phosphorus": 236,
+    "kcal": 245
+  },
+  "1106": {
+    "namn": "Köttbullar blandfärs stekta hemlagade",
+    "protein": 15.8,
+    "salt": 1.2,
+    "sodium": 480,
+    "potassium": 300,
+    "phosphorus": 157,
+    "kcal": 177
+  },
+  "1151": {
+    "namn": "Anka bröst rå",
+    "protein": 19.9,
+    "salt": 0.1,
+    "sodium": 57,
+    "potassium": 270,
+    "phosphorus": 186,
+    "kcal": 119
+  },
+  "1162": {
+    "namn": "Kalkon filé rå",
+    "protein": 24.1,
+    "salt": 0.2,
+    "sodium": 97,
+    "potassium": 320,
+    "phosphorus": 220,
+    "kcal": 106
+  },
+  "1164": {
+    "namn": "Kyckling kött rå u. skinn",
+    "protein": 21.5,
+    "salt": 0.2,
+    "sodium": 77,
+    "potassium": 230,
+    "phosphorus": 173,
+    "kcal": 115
+  },
+  "1166": {
+    "namn": "Kyckling bröstfilé rå m. skinn",
+    "protein": 21.5,
+    "salt": 0.2,
+    "sodium": 63,
+    "potassium": 220,
+    "phosphorus": 198,
+    "kcal": 148
+  },
+  "1167": {
+    "namn": "Kyckling lår rå m. skinn",
+    "protein": 18.9,
+    "salt": 0.2,
+    "sodium": 76,
+    "potassium": 192,
+    "phosphorus": 139,
+    "kcal": 196
+  },
+  "1202": {
+    "namn": "Sej rå",
+    "protein": 19.1,
+    "salt": 0.2,
+    "sodium": 66,
+    "potassium": 420,
+    "phosphorus": 240,
+    "kcal": 82
+  },
+  "1217": {
+    "namn": "Köttbuljong pulver tärning",
+    "protein": 20,
+    "salt": 60,
+    "sodium": 24000,
+    "potassium": 170,
+    "phosphorus": 430,
+    "kcal": 128
+  },
+  "1223": {
+    "namn": "Köttbuljong ätf.",
+    "protein": 0.4,
+    "salt": 0.6,
+    "sodium": 225,
+    "potassium": 11,
+    "phosphorus": 7,
+    "kcal": 8
+  },
+  "1225": {
+    "namn": "Ägg rått",
+    "protein": 12.1,
+    "salt": 0.3,
+    "sodium": 130,
+    "potassium": 140,
+    "phosphorus": 190,
+    "kcal": 136
+  },
+  "1226": {
+    "namn": "Äggula rå",
+    "protein": 15.9,
+    "salt": 0.1,
+    "sodium": 43,
+    "potassium": 75,
+    "phosphorus": 290,
+    "kcal": 325
+  },
+  "1227": {
+    "namn": "Äggvita rå",
+    "protein": 11.1,
+    "salt": 0.4,
+    "sodium": 150,
+    "potassium": 150,
+    "phosphorus": 14,
+    "kcal": 48
+  },
+  "1237": {
+    "namn": "Kolja rå",
+    "protein": 19.4,
+    "salt": 0.1,
+    "sodium": 46,
+    "potassium": 523,
+    "phosphorus": 199,
+    "kcal": 79
+  },
+  "1243": {
+    "namn": "Strömming rå",
+    "protein": 18,
+    "salt": 0.2,
+    "sodium": 66,
+    "potassium": 410,
+    "phosphorus": 277,
+    "kcal": 108
+  },
+  "1244": {
+    "namn": "Röding rå",
+    "protein": 19.9,
+    "salt": 0.1,
+    "sodium": 46,
+    "potassium": 379,
+    "phosphorus": 250,
+    "kcal": 151
+  },
+  "1246": {
+    "namn": "Torsk rå",
+    "protein": 18.2,
+    "salt": 0.2,
+    "sodium": 59,
+    "potassium": 402,
+    "phosphorus": 217,
+    "kcal": 78
+  },
+  "1253": {
+    "namn": "Abborre rå",
+    "protein": 19.8,
+    "salt": 0.1,
+    "sodium": 33,
+    "potassium": 389,
+    "phosphorus": 219,
+    "kcal": 86
+  },
+  "1255": {
+    "namn": "Lax odlad Norge fjordlax rå",
+    "protein": 20.2,
+    "salt": 0.1,
+    "sodium": 37,
+    "potassium": 354,
+    "phosphorus": 234,
+    "kcal": 210
+  },
+  "1258": {
+    "namn": "Rödspätta rå",
+    "protein": 12.4,
+    "salt": 0.7,
+    "sodium": 290,
+    "potassium": 170,
+    "phosphorus": 120,
+    "kcal": 56
+  },
+  "1260": {
+    "namn": "Makrill rå",
+    "protein": 17,
+    "salt": 0.1,
+    "sodium": 43,
+    "potassium": 367,
+    "phosphorus": 194,
+    "kcal": 290
+  },
+  "1263": {
+    "namn": "Gös rå",
+    "protein": 20.2,
+    "salt": 0.1,
+    "sodium": 46,
+    "potassium": 444,
+    "phosphorus": 201,
+    "kcal": 84
+  },
+  "1265": {
+    "namn": "Ansjovis skarpsill konserv. ",
+    "protein": 12.5,
+    "salt": 6.9,
+    "sodium": 2750,
+    "potassium": 145,
+    "phosphorus": 141,
+    "kcal": 215
+  },
+  "1269": {
+    "namn": "Lax kallrökt",
+    "protein": 20,
+    "salt": 2.8,
+    "sodium": 1100,
+    "potassium": 379,
+    "phosphorus": 244,
+    "kcal": 173
+  },
+  "1271": {
+    "namn": "Sardiner i olja konserv.",
+    "protein": 24,
+    "salt": 1.3,
+    "sodium": 510,
+    "potassium": 560,
+    "phosphorus": 300,
+    "kcal": 284
+  },
+  "1278": {
+    "namn": "Tonfisk i vatten konserv. avrunnen",
+    "protein": 24.1,
+    "salt": 1,
+    "sodium": 384,
+    "potassium": 220,
+    "phosphorus": 206,
+    "kcal": 106
+  },
+  "1285": {
+    "namn": "Lax gravad",
+    "protein": 18.8,
+    "salt": 2.9,
+    "sodium": 1150,
+    "potassium": 317,
+    "phosphorus": 214,
+    "kcal": 166
+  },
+  "1288": {
+    "namn": "Lax varmrökt urtagen",
+    "protein": 21.9,
+    "salt": 1.6,
+    "sodium": 643,
+    "potassium": 341,
+    "phosphorus": 235,
+    "kcal": 220
+  },
+  "1294": {
+    "namn": "Fiskpinnar stekta",
+    "protein": 11.7,
+    "salt": 1.1,
+    "sodium": 452,
+    "potassium": 225,
+    "phosphorus": 140,
+    "kcal": 223
+  },
+  "1345": {
+    "namn": "Fiskbullar m. hummersås konserv. tillagad",
+    "protein": 4.8,
+    "salt": 1.2,
+    "sodium": 492,
+    "potassium": 86,
+    "phosphorus": 57,
+    "kcal": 88
+  },
+  "1384": {
+    "namn": "Bläckfisk rå",
+    "protein": 15.4,
+    "salt": 0.3,
+    "sodium": 110,
+    "potassium": 280,
+    "phosphorus": 190,
+    "kcal": 83
+  },
+  "1386": {
+    "namn": "Ostron",
+    "protein": 9.3,
+    "salt": 0.3,
+    "sodium": 110,
+    "potassium": 265,
+    "phosphorus": 161,
+    "kcal": 55
+  },
+  "1393": {
+    "namn": "Hummer kokt",
+    "protein": 19,
+    "salt": 1.2,
+    "sodium": 486,
+    "potassium": 230,
+    "phosphorus": 185,
+    "kcal": 85
+  },
+  "1394": {
+    "namn": "Kräfta kokt",
+    "protein": 15.6,
+    "salt": 2.2,
+    "sodium": 893,
+    "potassium": 148,
+    "phosphorus": 148,
+    "kcal": 71
+  },
+  "1395": {
+    "namn": "Räka kokt",
+    "protein": 17.6,
+    "salt": 1.6,
+    "sodium": 630,
+    "potassium": 88,
+    "phosphorus": 147,
+    "kcal": 77
+  },
+  "1397": {
+    "namn": "Krabba kokt",
+    "protein": 19.7,
+    "salt": 0.8,
+    "sodium": 336,
+    "potassium": 204,
+    "phosphorus": 318,
+    "kcal": 125
+  },
+  "1485": {
+    "namn": "Korv kycklingkorv mager",
+    "protein": 11.5,
+    "salt": 1.7,
+    "sodium": 678,
+    "potassium": 166,
+    "phosphorus": 126,
+    "kcal": 155
+  },
+  "1487": {
+    "namn": "Korv falukorv fett 19% kött 58%",
+    "protein": 12.7,
+    "salt": 2,
+    "sodium": 800,
+    "potassium": 230,
+    "phosphorus": 172,
+    "kcal": 254
+  },
+  "1513": {
+    "namn": "Korv chorizo stekt kött 73%",
+    "protein": 14.3,
+    "salt": 2.7,
+    "sodium": 1076,
+    "potassium": 208,
+    "phosphorus": 256,
+    "kcal": 286
+  },
+  "1557": {
+    "namn": "Cashewnötter rostade u. salt",
+    "protein": 18,
+    "salt": 0,
+    "sodium": 16,
+    "potassium": 580,
+    "phosphorus": 487,
+    "kcal": 597
+  },
+  "1558": {
+    "namn": "Hasselnötter",
+    "protein": 13.2,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 820,
+    "phosphorus": 354,
+    "kcal": 658
+  },
+  "1559": {
+    "namn": "Jordnötssmör",
+    "protein": 22.6,
+    "salt": 1.2,
+    "sodium": 470,
+    "potassium": 680,
+    "phosphorus": 375,
+    "kcal": 615
+  },
+  "1560": {
+    "namn": "Jordnötter torkade",
+    "protein": 25.7,
+    "salt": 0,
+    "sodium": 16,
+    "potassium": 720,
+    "phosphorus": 385,
+    "kcal": 586
+  },
+  "1564": {
+    "namn": "Kokosflingor",
+    "protein": 6.2,
+    "salt": 0.1,
+    "sodium": 25,
+    "potassium": 793,
+    "phosphorus": 185,
+    "kcal": 690
+  },
+  "1570": {
+    "namn": "Pistaschnötter u. salt",
+    "protein": 23.4,
+    "salt": 0,
+    "sodium": 7,
+    "potassium": 1053,
+    "phosphorus": 537,
+    "kcal": 555
+  },
+  "1571": {
+    "namn": "Pumpafrö",
+    "protein": 29.8,
+    "salt": 0,
+    "sodium": 7,
+    "potassium": 809,
+    "phosphorus": 1233,
+    "kcal": 573
+  },
+  "1572": {
+    "namn": "Sesamfrö m. skal",
+    "protein": 19.9,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 505,
+    "phosphorus": 630,
+    "kcal": 606
+  },
+  "1574": {
+    "namn": "Solrosfrö",
+    "protein": 20.6,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 755,
+    "phosphorus": 670,
+    "kcal": 618
+  },
+  "1575": {
+    "namn": "Sötmandel",
+    "protein": 20.7,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 1010,
+    "phosphorus": 587,
+    "kcal": 592
+  },
+  "1576": {
+    "namn": "Valnötter",
+    "protein": 13.8,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 492,
+    "phosphorus": 386,
+    "kcal": 680
+  },
+  "1581": {
+    "namn": "Chips majs tortilla ",
+    "protein": 7.1,
+    "salt": 0.7,
+    "sodium": 280,
+    "potassium": 250,
+    "phosphorus": 180,
+    "kcal": 461
+  },
+  "1590": {
+    "namn": "Kokosmjölk fett ca 24%",
+    "protein": 2.3,
+    "salt": 0,
+    "sodium": 15,
+    "potassium": 265,
+    "phosphorus": 100,
+    "kcal": 239
+  },
+  "1591": {
+    "namn": "Vatten kokosvatten",
+    "protein": 0,
+    "salt": 0.1,
+    "sodium": 32,
+    "potassium": 141,
+    "phosphorus": 6,
+    "kcal": 18
+  },
+  "1713": {
+    "namn": "Gräddfil fett 12%",
+    "protein": 2.5,
+    "salt": 0.1,
+    "sodium": 38,
+    "potassium": 130,
+    "phosphorus": 94,
+    "kcal": 128
+  },
+  "1715": {
+    "namn": "Vispgrädde fett 40%",
+    "protein": 2.1,
+    "salt": 0.1,
+    "sodium": 24,
+    "potassium": 100,
+    "phosphorus": 63,
+    "kcal": 374
+  },
+  "1717": {
+    "namn": "Matlagningsgrädde fett 15%",
+    "protein": 3,
+    "salt": 0.1,
+    "sodium": 35,
+    "potassium": 141,
+    "phosphorus": 90,
+    "kcal": 162
+  },
+  "1719": {
+    "namn": "Crème fraiche fett 34%",
+    "protein": 2.3,
+    "salt": 0.1,
+    "sodium": 28,
+    "potassium": 110,
+    "phosphorus": 62,
+    "kcal": 323
+  },
+  "1798": {
+    "namn": "Lingonsylt",
+    "protein": 0.2,
+    "salt": 0,
+    "sodium": 12,
+    "potassium": 32,
+    "phosphorus": 5,
+    "kcal": 148
+  },
+  "1809": {
+    "namn": "Äppelmos",
+    "protein": 0.2,
+    "salt": 0,
+    "sodium": 4,
+    "potassium": 112,
+    "phosphorus": 24,
+    "kcal": 233
+  },
+  "1892": {
+    "namn": "Socker",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 2,
+    "phosphorus": 0,
+    "kcal": 405
+  },
+  "1896": {
+    "namn": "Honung",
+    "protein": 0.3,
+    "salt": 0,
+    "sodium": 5,
+    "potassium": 51,
+    "phosphorus": 6,
+    "kcal": 332
+  },
+  "1903": {
+    "namn": "Cider vol. % 1",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 7,
+    "potassium": 17,
+    "phosphorus": 5,
+    "kcal": 47
+  },
+  "1906": {
+    "namn": "Öl starköl el. exportöl vol. % 5,4",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 2,
+    "potassium": 49,
+    "phosphorus": 23,
+    "kcal": 42
+  },
+  "1907": {
+    "namn": "Vin rött vol. % 14",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 3,
+    "potassium": 120,
+    "phosphorus": 23,
+    "kcal": 79
+  },
+  "1908": {
+    "namn": "Vin vitt vol. % 12",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 3,
+    "potassium": 68,
+    "phosphorus": 14,
+    "kcal": 70
+  },
+  "1916": {
+    "namn": "Starkvin halvtorr vol. % 17 typ Sherry",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 6,
+    "potassium": 115,
+    "phosphorus": 37,
+    "kcal": 125
+  },
+  "1941": {
+    "namn": "Vetemjöl",
+    "protein": 8.5,
+    "salt": 0,
+    "sodium": 1,
+    "potassium": 166,
+    "phosphorus": 111,
+    "kcal": 352
+  },
+  "1946": {
+    "namn": "Potatismjöl",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 3,
+    "potassium": 68,
+    "phosphorus": 64,
+    "kcal": 346
+  },
+  "1966": {
+    "namn": "Vinäger ättiksyra 7%",
+    "protein": 0.4,
+    "salt": 0,
+    "sodium": 20,
+    "potassium": 89,
+    "phosphorus": 32,
+    "kcal": 30
+  },
+  "1967": {
+    "namn": "Äppelcidervinäger ättiksyra 7%",
+    "protein": 0.4,
+    "salt": 0,
+    "sodium": 7,
+    "potassium": 17,
+    "phosphorus": 5,
+    "kcal": 30
+  },
+  "1969": {
+    "namn": "Ketchup",
+    "protein": 1,
+    "salt": 1.7,
+    "sodium": 678,
+    "potassium": 265,
+    "phosphorus": 22,
+    "kcal": 91
+  },
+  "1973": {
+    "namn": "Senap fransk",
+    "protein": 6,
+    "salt": 0.1,
+    "sodium": 55,
+    "potassium": 260,
+    "phosphorus": 75,
+    "kcal": 93
+  },
+  "1975": {
+    "namn": "Salt m. jod",
+    "protein": 0,
+    "salt": 99,
+    "sodium": 39600,
+    "potassium": 37,
+    "phosphorus": 70,
+    "kcal": 0
+  },
+  "1978": {
+    "namn": "Salt örtsalt",
+    "protein": 0.9,
+    "salt": 88.5,
+    "sodium": 35385,
+    "potassium": 221,
+    "phosphorus": 18,
+    "kcal": 18
+  },
+  "2004": {
+    "namn": "Pesto m. basilika pinjenötter cashewnötter",
+    "protein": 4.2,
+    "salt": 3.2,
+    "sodium": 1288,
+    "potassium": 196,
+    "phosphorus": 90,
+    "kcal": 581
+  },
+  "2007": {
+    "namn": "Sweet chilisås",
+    "protein": 0.8,
+    "salt": 2.9,
+    "sodium": 1176,
+    "potassium": 130,
+    "phosphorus": 14,
+    "kcal": 207
+  },
+  "2012": {
+    "namn": "Teriyakisås",
+    "protein": 3.2,
+    "salt": 6.2,
+    "sodium": 2488,
+    "potassium": 156,
+    "phosphorus": 54,
+    "kcal": 110
+  },
+  "2064": {
+    "namn": "Falafel kikärtskroketter frysvara",
+    "protein": 8.1,
+    "salt": 1.2,
+    "sodium": 470,
+    "potassium": 350,
+    "phosphorus": 160,
+    "kcal": 231
+  },
+  "2068": {
+    "namn": "Sojaprotein färs kylvara el. frysvara",
+    "protein": 15.2,
+    "salt": 1,
+    "sodium": 380,
+    "potassium": 560,
+    "phosphorus": 200,
+    "kcal": 167
+  },
+  "2189": {
+    "namn": "Rapsolja",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 0,
+    "phosphorus": 0,
+    "kcal": 884
+  },
+  "2255": {
+    "namn": "Ost mozzarella fett 18%",
+    "protein": 15.6,
+    "salt": 0.5,
+    "sodium": 198,
+    "potassium": 26,
+    "phosphorus": 227,
+    "kcal": 214
+  },
+  "2269": {
+    "namn": "Ingefära färsk",
+    "protein": 2.2,
+    "salt": 0,
+    "sodium": 10,
+    "potassium": 407,
+    "phosphorus": 44,
+    "kcal": 63
+  },
+  "2306": {
+    "namn": "Kanel",
+    "protein": 3.6,
+    "salt": 0.1,
+    "sodium": 23,
+    "potassium": 550,
+    "phosphorus": 50,
+    "kcal": 255
+  },
+  "2475": {
+    "namn": "Ris basmati okokt",
+    "protein": 9.2,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 76,
+    "phosphorus": 101,
+    "kcal": 359
+  },
+  "2477": {
+    "namn": "Ris jasmin okokt",
+    "protein": 7.5,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 56,
+    "phosphorus": 68,
+    "kcal": 354
+  },
+  "2557": {
+    "namn": "Tacoskal",
+    "protein": 5.5,
+    "salt": 0.6,
+    "sodium": 238,
+    "potassium": 190,
+    "phosphorus": 120,
+    "kcal": 481
+  },
+  "3051": {
+    "namn": "Hummus kikärtsröra",
+    "protein": 5.8,
+    "salt": 1.6,
+    "sodium": 627,
+    "potassium": 133,
+    "phosphorus": 109,
+    "kcal": 306
+  },
+  "3247": {
+    "namn": "Brödkrutonger ",
+    "protein": 11.9,
+    "salt": 1.8,
+    "sodium": 698,
+    "potassium": 124,
+    "phosphorus": 115,
+    "kcal": 415
+  },
+  "3761": {
+    "namn": "Stora vita bönor konserv. u. lag",
+    "protein": 6.9,
+    "salt": 0.6,
+    "sodium": 240,
+    "potassium": 320,
+    "phosphorus": 81,
+    "kcal": 107
+  },
+  "3765": {
+    "namn": "Sötpotatis rå",
+    "protein": 1.6,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 486,
+    "phosphorus": 37,
+    "kcal": 71
+  },
+  "3815": {
+    "namn": "Kikärtor konserv. u. lag",
+    "protein": 7.5,
+    "salt": 0.5,
+    "sodium": 213,
+    "potassium": 163,
+    "phosphorus": 103,
+    "kcal": 128
+  },
+  "3816": {
+    "namn": "Kidneybönor röda bönor konserv. u. lag",
+    "protein": 8.8,
+    "salt": 0.6,
+    "sodium": 256,
+    "potassium": 244,
+    "phosphorus": 104,
+    "kcal": 110
+  },
+  "3817": {
+    "namn": "Svarta bönor konserv. u. lag",
+    "protein": 8.1,
+    "salt": 0.6,
+    "sodium": 226,
+    "potassium": 218,
+    "phosphorus": 91,
+    "kcal": 111
+  },
+  "3823": {
+    "namn": "Röda linser konserv. u. lag",
+    "protein": 6.9,
+    "salt": 0.6,
+    "sodium": 230,
+    "potassium": 119,
+    "phosphorus": 71,
+    "kcal": 89
+  },
+  "3824": {
+    "namn": "Gröna linser konserv. u. lag",
+    "protein": 6.2,
+    "salt": 0.8,
+    "sodium": 306,
+    "potassium": 127,
+    "phosphorus": 76,
+    "kcal": 92
+  },
+  "3873": {
+    "namn": "Skagenröra m. majonnäs kylvara",
+    "protein": 5.4,
+    "salt": 1.3,
+    "sodium": 531,
+    "potassium": 57,
+    "phosphorus": 62,
+    "kcal": 405
+  },
+  "4447": {
+    "namn": "Nudlar risnudlar okokta",
+    "protein": 3.4,
+    "salt": 0.5,
+    "sodium": 182,
+    "potassium": 30,
+    "phosphorus": 153,
+    "kcal": 360
+  },
+  "4608": {
+    "namn": "Sill inlagd u. lag",
+    "protein": 9.8,
+    "salt": 2.9,
+    "sodium": 1175,
+    "potassium": 61,
+    "phosphorus": 66,
+    "kcal": 235
+  },
+  "4662": {
+    "namn": "Flytande matfettsblandning fett 80% berikad typ Arla smör- och rapsolja",
+    "protein": 0.5,
+    "salt": 1.2,
+    "sodium": 500,
+    "potassium": 0,
+    "phosphorus": 0,
+    "kcal": 711
+  },
+  "4937": {
+    "namn": "Tomat körsbärstomat röd",
+    "protein": 0.8,
+    "salt": 0,
+    "sodium": 3,
+    "potassium": 320,
+    "phosphorus": 37,
+    "kcal": 25
+  },
+  "4941": {
+    "namn": "Spenat färsk",
+    "protein": 3.3,
+    "salt": 0.2,
+    "sodium": 100,
+    "potassium": 730,
+    "phosphorus": 45,
+    "kcal": 24
+  },
+  "4947": {
+    "namn": "Lök röd",
+    "protein": 1.2,
+    "salt": 0,
+    "sodium": 3,
+    "potassium": 200,
+    "phosphorus": 34,
+    "kcal": 46
+  },
+  "5973": {
+    "namn": "Kryddblandning taco",
+    "protein": 5.6,
+    "salt": 20.2,
+    "sodium": 8100,
+    "potassium": 675,
+    "phosphorus": 195,
+    "kcal": 284
+  },
+  "5974": {
+    "namn": "Bröd vitt vetetortilla",
+    "protein": 8.4,
+    "salt": 1.8,
+    "sodium": 720,
+    "potassium": 150,
+    "phosphorus": 156,
+    "kcal": 306
+  },
+  "6009": {
+    "namn": "Kalkon rökt tunna skivor",
+    "protein": 18.3,
+    "salt": 3.2,
+    "sodium": 1260,
+    "potassium": 270,
+    "phosphorus": 474,
+    "kcal": 98
+  },
+  "6113": {
+    "namn": "Yoghurt naturell fett 10%",
+    "protein": 3.6,
+    "salt": 0.1,
+    "sodium": 43,
+    "potassium": 157,
+    "phosphorus": 101,
+    "kcal": 109
+  },
+  "6165": {
+    "namn": "Kokosolja",
+    "protein": 0,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 0,
+    "phosphorus": 0,
+    "kcal": 881
+  },
+  "6272": {
+    "namn": "Mykoprotein bullar frysvara",
+    "protein": 13.3,
+    "salt": 1.4,
+    "sodium": 540,
+    "potassium": 230,
+    "phosphorus": 190,
+    "kcal": 123
+  },
+  "6379": {
+    "namn": "Grönsaksbiff broccolibiff stekt veg.",
+    "protein": 7.3,
+    "salt": 1.2,
+    "sodium": 496,
+    "potassium": 208,
+    "phosphorus": 158,
+    "kcal": 271
+  },
+  "6384": {
+    "namn": "Mango chutney",
+    "protein": 0.6,
+    "salt": 0,
+    "sodium": 5,
+    "potassium": 93,
+    "phosphorus": 19,
+    "kcal": 110
+  },
+  "6666": {
+    "namn": "Muskotnöt malen",
+    "protein": 5.3,
+    "salt": 0,
+    "sodium": 14,
+    "potassium": 474,
+    "phosphorus": 207,
+    "kcal": 484
+  },
+  "6675": {
+    "namn": "Fisksås",
+    "protein": 9.1,
+    "salt": 22.5,
+    "sodium": 9000,
+    "potassium": 230,
+    "phosphorus": 57,
+    "kcal": 48
+  },
+  "6872": {
+    "namn": "Majsgryn polenta",
+    "protein": 8.6,
+    "salt": 0,
+    "sodium": 0,
+    "potassium": 189,
+    "phosphorus": 161,
+    "kcal": 345
+  },
+  "7025": {
+    "namn": "Mjölmålla quinoa okokt",
+    "protein": 14.4,
+    "salt": 0,
+    "sodium": 5,
+    "potassium": 563,
+    "phosphorus": 457,
+    "kcal": 356
+  },
+  "7193": {
+    "namn": "Koriander blad",
+    "protein": 3.5,
+    "salt": 0.1,
+    "sodium": 37,
+    "potassium": 546,
+    "phosphorus": 65,
+    "kcal": 37
+  },
+  "7195": {
+    "namn": "Kardemumma torkad",
+    "protein": 6.7,
+    "salt": 0,
+    "sodium": 16,
+    "potassium": 1331,
+    "phosphorus": 117,
+    "kcal": 292
+  },
+  "7196": {
+    "namn": "Kryddnejlika torkad malen",
+    "protein": 5.9,
+    "salt": 0.5,
+    "sodium": 183,
+    "potassium": 1434,
+    "phosphorus": 83,
+    "kcal": 240
+  },
+  "7197": {
+    "namn": "Koriander frö torkad",
+    "protein": 10.7,
+    "salt": 0.1,
+    "sodium": 34,
+    "potassium": 1473,
+    "phosphorus": 293,
+    "kcal": 336
+  },
+  "7198": {
+    "namn": "Gurkmeja torkad",
+    "protein": 7.7,
+    "salt": 0.1,
+    "sodium": 24,
+    "potassium": 2374,
+    "phosphorus": 276,
+    "kcal": 316
+  },
+  "7199": {
+    "namn": "Spiskummin frö torkad",
+    "protein": 13.9,
+    "salt": 0.3,
+    "sodium": 125,
+    "potassium": 1886,
+    "phosphorus": 382,
+    "kcal": 354
+  }
+}

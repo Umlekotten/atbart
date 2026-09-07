@@ -1,0 +1,241 @@
+{
+  "recipes": [
+    {
+      "id": "tikka-masala-med-egen-kryddblandning",
+      "source": "egen",
+      "sourceUrl": "",
+      "name": "Tikka masala med egen kryddblandning",
+      "description": "Krämig kyckling tikka masala där den färdiga kryddmixen, som ofta är mest salt, är utbytt mot en egen blandning. Mindre kyckling per portion och mer sås och ris, så portionen mättar ändå.",
+      "image": "",
+      "author": "Teamet",
+      "totalMinutes": 40,
+      "portions": 4,
+      "mealType": "middag",
+      "effort": "medel",
+      "category": [
+        "Huvudrätt"
+      ],
+      "cuisine": [
+        "Indiskt"
+      ],
+      "keywords": [
+        "Kyckling",
+        "Gryta",
+        "Ris"
+      ],
+      "proteinSource": "fagel",
+      "ingredientGroups": [
+        {
+          "ingredients": [
+            {
+              "raw": "300 g kycklinglårfilé",
+              "quantity": 300,
+              "unit": "g",
+              "name": "kycklinglårfilé",
+              "grams": 300,
+              "category": "kott-fagel",
+              "matched": true
+            },
+            {
+              "raw": "1 gul lök",
+              "quantity": 1,
+              "unit": "st",
+              "name": "gul lök",
+              "grams": 100,
+              "category": "gronsaker-frukt",
+              "matched": true
+            },
+            {
+              "raw": "2 klyftor vitlök",
+              "quantity": 2,
+              "unit": "klyfta",
+              "name": "vitlök",
+              "grams": 10,
+              "category": "gronsaker-frukt",
+              "matched": true
+            },
+            {
+              "raw": "1 msk riven färsk ingefära",
+              "quantity": 1,
+              "unit": "msk",
+              "name": "riven färsk ingefära",
+              "grams": 15,
+              "category": "gronsaker-frukt",
+              "matched": true
+            },
+            {
+              "raw": "1 msk rapsolja",
+              "quantity": 1,
+              "unit": "msk",
+              "name": "rapsolja",
+              "grams": 14,
+              "category": "skafferi",
+              "matched": true
+            },
+            {
+              "raw": "1 burk (400 g) krossade tomater",
+              "quantity": 1,
+              "unit": "burk",
+              "name": "krossade tomater",
+              "grams": 400,
+              "category": "skafferi",
+              "matched": true
+            },
+            {
+              "raw": "1,5 dl matlagningsgrädde",
+              "quantity": 1.5,
+              "unit": "dl",
+              "name": "matlagningsgrädde",
+              "grams": 150,
+              "category": "mejeri-agg",
+              "matched": true
+            },
+            {
+              "raw": "2 msk turkisk yoghurt",
+              "quantity": 2,
+              "unit": "msk",
+              "name": "turkisk yoghurt",
+              "grams": 30,
+              "category": "mejeri-agg",
+              "matched": true
+            },
+            {
+              "raw": "1,5 dl basmatiris",
+              "quantity": 1.5,
+              "unit": "dl",
+              "name": "basmatiris",
+              "grams": 120,
+              "category": "skafferi",
+              "matched": true
+            },
+            {
+              "raw": "färsk koriander",
+              "name": "färsk koriander",
+              "category": "gronsaker-frukt",
+              "matched": false
+            },
+            {
+              "raw": "1 lime",
+              "quantity": 1,
+              "unit": "st",
+              "name": "lime",
+              "grams": 60,
+              "category": "gronsaker-frukt",
+              "matched": true
+            }
+          ]
+        },
+        {
+          "title": "Egen kryddblandning",
+          "ingredients": [
+            {
+              "raw": "2 tsk garam masala",
+              "quantity": 2,
+              "unit": "tsk",
+              "name": "garam masala",
+              "grams": 4,
+              "category": "kryddor-smaksattare",
+              "matched": true
+            },
+            {
+              "raw": "1 tsk spiskummin",
+              "quantity": 1,
+              "unit": "tsk",
+              "name": "spiskummin",
+              "grams": 2,
+              "category": "kryddor-smaksattare",
+              "matched": true
+            },
+            {
+              "raw": "1 tsk paprikapulver",
+              "quantity": 1,
+              "unit": "tsk",
+              "name": "paprikapulver",
+              "grams": 2,
+              "category": "kryddor-smaksattare",
+              "matched": true
+            },
+            {
+              "raw": "1 tsk mald koriander",
+              "quantity": 1,
+              "unit": "tsk",
+              "name": "mald koriander",
+              "grams": 2,
+              "category": "kryddor-smaksattare",
+              "matched": true
+            },
+            {
+              "raw": "½ tsk gurkmeja",
+              "quantity": 0.5,
+              "unit": "tsk",
+              "name": "gurkmeja",
+              "grams": 1,
+              "category": "kryddor-smaksattare",
+              "matched": true
+            },
+            {
+              "raw": "½ tsk kanel",
+              "quantity": 0.5,
+              "unit": "tsk",
+              "name": "kanel",
+              "grams": 1,
+              "category": "kryddor-smaksattare",
+              "matched": true
+            },
+            {
+              "raw": "½ tsk chiliflakes",
+              "quantity": 0.5,
+              "unit": "tsk",
+              "name": "chiliflakes",
+              "grams": 1,
+              "category": "kryddor-smaksattare",
+              "matched": true
+            }
+          ]
+        }
+      ],
+      "instructions": [
+        "Blanda kryddorna till kryddblandningen i en liten skål.",
+        "Skär kycklingen i bitar och vänd den i yoghurten och hälften av kryddblandningen. Låt stå medan du förbereder resten.",
+        "Koka riset enligt anvisningen på paketet, utan salt.",
+        "Hacka lök, vitlök och ingefära. Fräs mjukt i oljan i en stor panna på medelvärme, ca 5 minuter. Rör ner resten av kryddblandningen.",
+        "Lägg i kycklingen och bryn den runt om i ett par minuter.",
+        "Häll på de krossade tomaterna och låt puttra under lock ca 15 minuter. Rör ner grädden och låt koka ihop några minuter till.",
+        "Smaka av med limesaft. Servera med riset och toppa med koriander."
+      ],
+      "nutrition": {
+        "protein": 19,
+        "salt": 0.4,
+        "energyKcal": 470,
+        "potassium": 620,
+        "phosphorus": 240,
+        "coverage": 1
+      },
+      "adaptedNutrition": {
+        "protein": 19,
+        "salt": 0.4,
+        "energyKcal": 470,
+        "potassium": 620,
+        "phosphorus": 240,
+        "coverage": 1
+      },
+      "adaptations": [
+        {
+          "kind": "egen-kryddmix",
+          "text": "Egen kryddblandning i stället för färdig tikka masala-krydda, som ofta innehåller mycket salt.",
+          "effect": {
+            "salt": -1.1
+          }
+        },
+        {
+          "kind": "minska-kott",
+          "text": "Mindre kyckling per portion, ca 75 g, och mer sås och ris så att portionen mättar.",
+          "effect": {
+            "protein": -7
+          }
+        }
+      ],
+      "fit": "passar"
+    }
+  ]
+}
