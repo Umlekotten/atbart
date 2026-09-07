@@ -21,7 +21,7 @@ import {
 export const SNACK_RESERVE = { protein: 5, salt: 0.5, energyKcal: 150 };
 
 /** Uppskattning för en restaurangmåltid (lunch/middag ute). hackathon-antagande, ska godkännas av dietist */
-export const RESTAURANT_ESTIMATE = { protein: 35, salt: 2.5, energyKcal: 800 };
+export const RESTAURANT_ESTIMATE = { protein: 40, salt: 4, energyKcal: 800 };
 
 /** Antal dagar på varje sida om en restaurangkväll som får lättare middag. hackathon-antagande, ska godkännas av dietist */
 export const COMPENSATION_DAYS = 2;
