@@ -56,4 +56,4 @@ Receptbanken (`app/src/data/recipes.json`) är incheckad, så Vercel behöver in
 
 ## Viktigt om innehållet
 
-Siffrorna är ungefärliga och tröskelvärdena är hackathon-antaganden. Recept, riktvärden och regeln för kompensation över veckan ska granskas av dietist innan riktiga användare får appen. Dialys och transplantation har andra mål och stöds inte.
+Siffrorna är ungefärliga och tröskelvärdena är hackathon-antaganden. Recept och riktvärden ska granskas av dietist innan riktiga användare får appen. Dialys och transplantation har andra mål och stöds inte.

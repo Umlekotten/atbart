@@ -20,12 +20,6 @@ import {
 /** Reserv för mellanmål/fika per dag. hackathon-antagande, ska godkännas av dietist */
 export const SNACK_RESERVE = { protein: 5, salt: 0.5, energyKcal: 150 };
 
-/** Uppskattning för en restaurangmåltid (lunch/middag ute). hackathon-antagande, ska godkännas av dietist */
-export const RESTAURANT_ESTIMATE = { protein: 40, salt: 4, energyKcal: 800 };
-
-/** Antal dagar på varje sida om en restaurangkväll som får lättare middag. hackathon-antagande, ska godkännas av dietist */
-export const COMPENSATION_DAYS = 2;
-
 /** En dag får aldrig planeras under 70 % av dagsmålet (protein). hackathon-antagande, ska godkännas av dietist */
 export const DAY_FLOOR = 0.7;
 
@@ -71,9 +65,8 @@ export interface Macro {
 export interface DayPlan {
   /** 0 = måndag ... 6 = söndag */
   dayIndex: number;
-  /** Recipe.id eller null (restaurang, eller inget hittades) */
+  /** Recipe.id eller null om inget recept hittades */
   dinner: string | null;
-  restaurant: boolean;
   breakfastId: string;
   lunchId: string;
 }
@@ -84,12 +77,8 @@ export interface WeekPlan {
 }
 
 export interface PlanOptions {
-  /** Dagar (0–6) då man äter ute på kvällen. */
-  restaurantDays?: number[];
   /** Låsta middagar per dag: recipeId behålls, null/undefined planeras om. */
   locked?: (string | null | undefined)[];
-  /** Nuvarande middag per dag som helst behålls om inget lättare/bättre finns (minskar onödiga byten). */
-  preferred?: (string | null | undefined)[];
   seed?: number;
 }
 
@@ -218,7 +207,7 @@ function lunchMacroFor(
   byId: Map<string, Recipe>
 ): Macro {
   const lunch = findLunch(lunchId);
-  if (lunch.usesLeftovers && prev && !prev.restaurant && prev.dinner) {
+  if (lunch.usesLeftovers && prev && prev.dinner) {
     const r = byId.get(prev.dinner);
     if (r) return recipeMacro(r);
   }
@@ -226,38 +215,18 @@ function lunchMacroFor(
 }
 
 function dinnerMacroFor(day: DayPlan, byId: Map<string, Recipe>): Macro {
-  if (day.restaurant) return RESTAURANT_ESTIMATE;
   if (!day.dinner) return ZERO;
   const r = byId.get(day.dinner);
   return r ? recipeMacro(r) : ZERO;
 }
 
-function isCompensationDay(dayIndex: number, restaurantDays: Set<number>): boolean {
-  for (const r of restaurantDays) {
-    if (r !== dayIndex && Math.abs(r - dayIndex) <= COMPENSATION_DAYS) return true;
-  }
-  return false;
-}
-
 interface ChoiceContext {
-  profile: Profile;
   exclude: Set<string>;
   avoidSources: (string | undefined)[];
   kottCount: number;
   allowance: { protein: number; salt: number };
   floorDinner: number;
   ceilDinner: { protein: number; salt: number };
-  compensate: boolean;
-  /** Behålls om det klarar filtren och inget är lättare (kompensationsdag) eller alltid (vanlig dag). */
-  preferred?: Recipe;
-}
-
-/** Lägre är "lättare": andel av dagsmålet som middagen tar. Protein väger tyngst, salt hälften. */
-function lightness(r: Recipe, profile: Profile): number {
-  return (
-    r.adaptedNutrition.protein / Math.max(profile.proteinTarget, 1) +
-    0.5 * (r.adaptedNutrition.salt / Math.max(profile.saltTarget, 0.1))
-  );
 }
 
 /**
@@ -287,25 +256,7 @@ function chooseDinner(candidates: Recipe[], ctx: ChoiceContext): Recipe | null {
 
   for (const filters of stages) {
     const ok = candidates.filter((r) => filters.every((f) => f(r)));
-    if (ok.length === 0) continue;
-    const preferredOk = ctx.preferred && filters.every((f) => f(ctx.preferred!)) ? ctx.preferred : undefined;
-    if (!ctx.compensate) return preferredOk ?? ok[0];
-    // Kompensationsdag: ta det lättaste som ändå håller golvet. Vid lika behålls den nuvarande rätten.
-    const start = preferredOk ?? ok[0];
-    const best = ok.reduce((acc, r) => (lightness(r, ctx.profile) < lightness(acc, ctx.profile) - 1e-9 ? r : acc), start);
-    // Grannen till en restaurangkväll ska aldrig bli tyngre än den var. Om den nuvarande rätten
-    // klarar allt utom golvet (t.ex. för att gårdagens rester blev lättare) och är minst lika lätt
-    // som det bästa alternativet, behåller vi den. Golvet är en mjuk gräns, inte en regel som får
-    // göra dagen tyngre.
-    if (ctx.preferred && !preferredOk) {
-      // Golv och variation är mjuka krav på en kompensationsdag; de får inte göra dagen tyngre.
-      const exceptSoft = filters.filter((f) => f !== floor && f !== variety);
-      const stillFine = exceptSoft.every((f) => f(ctx.preferred!));
-      if (stillFine && lightness(ctx.preferred, ctx.profile) <= lightness(best, ctx.profile) + 1e-9) {
-        return ctx.preferred;
-      }
-    }
-    return best;
+    if (ok.length > 0) return ok[0];
   }
   return null;
 }
@@ -322,15 +273,13 @@ export function planWeek(recipes: Recipe[], profile: Profile, opts: PlanOptions 
   const rand = rng(seed);
   const byId = indexRecipes(recipes);
   const candidates = shuffle(plannableRecipes(recipes, profile), rand);
-  const restaurantDays = new Set((opts.restaurantDays ?? []).filter((d) => d >= 0 && d <= 6));
   const locked = opts.locked ?? [];
-  const preferred = opts.preferred ?? [];
 
   const used = new Set<string>();
   let kottCount = 0;
   for (let d = 0; d < 7; d++) {
     const id = locked[d];
-    if (id && byId.has(id) && !restaurantDays.has(d)) {
+    if (id && byId.has(id)) {
       used.add(id);
       if (byId.get(id)!.proteinSource === "kott") kottCount++;
     }
@@ -342,14 +291,9 @@ export function planWeek(recipes: Recipe[], profile: Profile, opts: PlanOptions 
     const base: DayPlan = {
       dayIndex: d,
       dinner: null,
-      restaurant: restaurantDays.has(d),
       breakfastId: DEFAULT_BREAKFAST_ID,
       lunchId: DEFAULT_LUNCH_ID,
     };
-    if (base.restaurant) {
-      days.push(base);
-      continue;
-    }
     const lockedId = locked[d];
     if (lockedId && byId.has(lockedId)) {
       days.push({ ...base, dinner: lockedId });
@@ -359,16 +303,8 @@ export function planWeek(recipes: Recipe[], profile: Profile, opts: PlanOptions 
     const breakfast = mealMacro(findBreakfast(base.breakfastId));
     const lunch = lunchMacroFor(prev, base.lunchId, byId);
     const fixed = add(breakfast, lunch, SNACK_RESERVE);
-    // Senare dagars nuvarande middagar är reserverade, så att en tidigare kompensationsdag inte
-    // "stjäl" en lätt rätt från en granne som då skulle behöva något tyngre.
-    const exclude = new Set(used);
-    for (let j = d + 1; j < 7; j++) {
-      const id = preferred[j];
-      if (id && !restaurantDays.has(j) && byId.has(id)) exclude.add(id);
-    }
     const pick = chooseDinner(candidates, {
-      profile,
-      exclude,
+      exclude: used,
       avoidSources: [prev?.dinner ? byId.get(prev.dinner)?.proteinSource : undefined],
       kottCount,
       allowance: dailyDinnerAllowance(profile, breakfast, lunch),
@@ -377,8 +313,6 @@ export function planWeek(recipes: Recipe[], profile: Profile, opts: PlanOptions 
         protein: DAY_CEILING * profile.proteinTarget - fixed.protein,
         salt: DAY_CEILING * profile.saltTarget - fixed.salt,
       },
-      compensate: isCompensationDay(d, restaurantDays),
-      preferred: preferred[d] ? candidates.find((r) => r.id === preferred[d]) : undefined,
     });
     if (pick) {
       used.add(pick.id);
@@ -412,7 +346,7 @@ function repairWeekBudget(
     const used = new Set(current.days.map((d) => d.dinner).filter((x): x is string => !!x));
     let best: { dayIndex: number; recipe: Recipe; gain: number } | null = null;
     current.days.forEach((day, i) => {
-      if (day.restaurant || !day.dinner || locked[i]) return;
+      if (!day.dinner || locked[i]) return;
       const cur = byId.get(day.dinner);
       if (!cur) return;
       for (const r of candidates) {
@@ -445,12 +379,11 @@ export function swapDinner(
   if (!day) return plan;
   const byId = indexRecipes(recipes);
   const candidates = shuffle(plannableRecipes(recipes, profile), rng(seed));
-  const restaurantDays = new Set(plan.days.filter((d) => d.restaurant).map((d) => d.dayIndex));
 
   const exclude = new Set<string>();
   let kottCount = 0;
   plan.days.forEach((d, i) => {
-    if (d.dinner && !d.restaurant) {
+    if (d.dinner) {
       exclude.add(d.dinner);
       if (i !== dayIndex && byId.get(d.dinner)?.proteinSource === "kott") kottCount++;
     }
@@ -464,11 +397,10 @@ export function swapDinner(
   const fixed = add(breakfast, lunch, SNACK_RESERVE);
 
   const pick = chooseDinner(candidates, {
-    profile,
     exclude,
     avoidSources: [
-      prev?.dinner && !prev.restaurant ? byId.get(prev.dinner)?.proteinSource : undefined,
-      next?.dinner && !next.restaurant ? byId.get(next.dinner)?.proteinSource : undefined,
+      prev?.dinner ? byId.get(prev.dinner)?.proteinSource : undefined,
+      next?.dinner ? byId.get(next.dinner)?.proteinSource : undefined,
     ],
     kottCount,
     allowance: dailyDinnerAllowance(profile, breakfast, lunch),
@@ -477,12 +409,11 @@ export function swapDinner(
       protein: DAY_CEILING * profile.proteinTarget - fixed.protein,
       salt: DAY_CEILING * profile.saltTarget - fixed.salt,
     },
-    compensate: isCompensationDay(dayIndex, restaurantDays),
   });
   if (!pick) return plan;
   return {
     ...plan,
-    days: plan.days.map((d, i) => (i === dayIndex ? { ...d, dinner: pick.id, restaurant: false } : d)),
+    days: plan.days.map((d, i) => (i === dayIndex ? { ...d, dinner: pick.id } : d)),
   };
 }
 
@@ -490,33 +421,8 @@ export function swapDinner(
 export function setDinner(plan: WeekPlan, dayIndex: number, recipeId: string): WeekPlan {
   return {
     ...plan,
-    days: plan.days.map((d, i) => (i === dayIndex ? { ...d, dinner: recipeId, restaurant: false } : d)),
+    days: plan.days.map((d, i) => (i === dayIndex ? { ...d, dinner: recipeId } : d)),
   };
-}
-
-/**
- * Sätt nya restaurangdagar. Dagar som inte påverkas behåller sin middag,
- * dagarna runt en ändrad restaurangkväll planeras om (lättare eller normala).
- */
-export function setRestaurantDays(
-  plan: WeekPlan,
-  recipes: Recipe[],
-  profile: Profile,
-  restaurantDays: number[]
-): WeekPlan {
-  const before = new Set(plan.days.filter((d) => d.restaurant).map((d) => d.dayIndex));
-  const after = new Set(restaurantDays);
-  const changed: number[] = [];
-  for (let d = 0; d < 7; d++) if (before.has(d) !== after.has(d)) changed.push(d);
-  const affected = new Set<number>();
-  for (const c of changed) {
-    for (let d = c - COMPENSATION_DAYS; d <= c + COMPENSATION_DAYS; d++) {
-      if (d >= 0 && d <= 6) affected.add(d);
-    }
-  }
-  const locked = plan.days.map((d, i) => (affected.has(i) ? null : d.dinner));
-  const preferred = plan.days.map((d, i) => (affected.has(i) ? d.dinner : null));
-  return planWeek(recipes, profile, { restaurantDays, locked, preferred, seed: plan.seed });
 }
 
 // ---------------------------------------------------------------------------
@@ -667,7 +573,7 @@ export function shoppingList(plan: WeekPlan, recipes: Recipe[], portions: number
   const acc = new Map<string, Accumulator>();
 
   for (const day of plan.days) {
-    if (day.restaurant || !day.dinner) continue;
+    if (!day.dinner) continue;
     const recipe = byId.get(day.dinner);
     if (!recipe) continue;
     const portionFactor = portions / Math.max(recipe.portions, 1);

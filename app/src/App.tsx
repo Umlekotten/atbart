@@ -4,7 +4,6 @@ import {
   newSeed,
   planWeek,
   setDinner,
-  setRestaurantDays,
   swapDinner,
   type Profile,
   type WeekPlan,
@@ -15,7 +14,6 @@ import { Onboarding } from "./components/Onboarding";
 import { Tonight } from "./components/Tonight";
 import { Week } from "./components/Week";
 import { ShoppingList } from "./components/ShoppingList";
-import { Restaurant } from "./components/Restaurant";
 import { Recipes } from "./components/Recipes";
 import { RecipeDetail } from "./components/RecipeDetail";
 import { ProfileView } from "./components/Profile";
@@ -25,7 +23,6 @@ type Route =
   | { name: "ikvall" }
   | { name: "veckan" }
   | { name: "inkop" }
-  | { name: "restaurang"; preselect?: number; back: Route }
   | { name: "recept" }
   | { name: "recept-detalj"; id: string; back: Route; focusAdaptations?: boolean }
   | { name: "jag" };
@@ -54,7 +51,6 @@ function tabOf(route: Route): Tab {
       return "recept";
     case "jag":
       return "jag";
-    case "restaurang":
     case "recept-detalj":
       return tabOf(route.back);
   }
@@ -63,18 +59,13 @@ function tabOf(route: Route): Tab {
 /** Planen måste ha sju dagar och bara peka på recept som finns i databasen (den kan ha bytts ut av skrapan). */
 function validPlan(plan: WeekPlan | null | undefined): boolean {
   if (!plan || !Array.isArray(plan.days) || plan.days.length !== 7) return false;
-  return plan.days.every((d) => d.restaurant || (d.dinner !== null && getRecipe(d.dinner) !== undefined));
-}
-
-function restaurantDaysOf(plan: WeekPlan): number[] {
-  return plan.days.filter((d) => d.restaurant).map((d) => d.dayIndex);
+  return plan.days.every((d) => d.dinner !== null && getRecipe(d.dinner) !== undefined);
 }
 
 function initialState(): AppState {
   const s = loadState();
   if (s.profile && !s.profile.dialysis && !validPlan(s.plan)) {
-    const restaurantDays = s.plan?.days ? restaurantDaysOf(s.plan) : [];
-    s.plan = planWeek(recipes, s.profile, { seed: s.plan?.seed ?? newSeed(), restaurantDays });
+    s.plan = planWeek(recipes, s.profile, { seed: s.plan?.seed ?? newSeed() });
   }
   return s;
 }
@@ -127,17 +118,11 @@ export default function App() {
   }
 
   function newWeek() {
-    patch((_, p, pl) => ({
+    patch((_, p) => ({
       checked: {},
-      plan: planWeek(recipes, p, { seed: newSeed(), restaurantDays: restaurantDaysOf(pl) }),
+      plan: planWeek(recipes, p, { seed: newSeed() }),
     }));
     setToast("Ny vecka planerad");
-  }
-
-  function removeRestaurant(dayIndex: number) {
-    patch((_, p, pl) => ({
-      plan: setRestaurantDays(pl, recipes, p, restaurantDaysOf(pl).filter((d) => d !== dayIndex)),
-    }));
   }
 
   function addTonight(id: string) {
@@ -149,7 +134,7 @@ export default function App() {
   function saveProfile(p: Profile) {
     patch((_, __, pl) => ({
       profile: p,
-      plan: planWeek(recipes, p, { seed: pl.seed, restaurantDays: restaurantDaysOf(pl) }),
+      plan: planWeek(recipes, p, { seed: pl.seed }),
       tonightFilter: p.effortPref === "enkel" ? "enkla" : "alla",
     }));
     setToast("Sparat, veckan är omräknad");
@@ -178,7 +163,6 @@ export default function App() {
           onFilter={(f) => setState((s) => ({ ...s, tonightFilter: f }))}
           onSwap={() => swapDay(today, state.tonightFilter === "enkla" ? "enkel" : "alla")}
           onOpenRecipe={openRecipe}
-          onOpenRestaurant={() => setRoute({ name: "restaurang", back: route })}
         />
       );
       break;
@@ -191,8 +175,6 @@ export default function App() {
           getRecipe={getRecipe}
           onSwap={(d) => swapDay(d)}
           onOpenRecipe={(id) => openRecipe(id)}
-          onEatOut={(d) => setRoute({ name: "restaurang", preselect: d, back: route })}
-          onRemoveRestaurant={removeRestaurant}
           onNewWeek={newWeek}
           onShopping={() => setRoute({ name: "inkop" })}
         />
@@ -213,25 +195,6 @@ export default function App() {
         />
       );
       break;
-    case "restaurang": {
-      const back = route.back;
-      screen = (
-        <Restaurant
-          plan={plan}
-          profile={profile}
-          recipes={recipes}
-          getRecipe={getRecipe}
-          preselect={route.preselect}
-          onApply={(p) => {
-            setState((s) => ({ ...s, plan: p, checked: {} }));
-            setRoute(back);
-            setToast("Veckan är omräknad");
-          }}
-          onBack={() => setRoute(back)}
-        />
-      );
-      break;
-    }
     case "recept":
       screen = <Recipes recipes={recipes} onOpen={(id) => openRecipe(id)} />;
       break;
